@@ -1,0 +1,11 @@
+Inheritance allows us to create a new class from an existing class.
+
+The new class that is created is known as subclass (child or derived class) 
+and the existing class from where the child class is derived is known as superclass (parent or base class).
+
+In Java, inheritance is an is-a relationship. That is, we use inheritance only if there exists an is-a 
+relationship between two classes. 
+    Car is a Vehicle
+    Orange is a Fruit
+    Surgeon is a Doctor
+    Dog is an Animal
