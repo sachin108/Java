@@ -9,3 +9,9 @@ relationship between two classes.
     Orange is a Fruit
     Surgeon is a Doctor
     Dog is an Animal
+
+
+The most important use of inheritance in Java is code reusability. 
+
+Method overriding is also known as runtime polymorphism. 
+Hence, we can achieve Polymorphism in Java with the help of inheritance.
