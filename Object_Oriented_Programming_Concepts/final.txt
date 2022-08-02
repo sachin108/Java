@@ -1,0 +1,5 @@
+    the final variable cannot be reinitialized with another value (constant)
+
+    the final method cannot be overridden but can be overloaded
+
+    the final class cannot be extended

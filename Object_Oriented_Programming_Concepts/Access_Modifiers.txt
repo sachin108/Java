@@ -1,0 +1,22 @@
+Access modifiers are used to set the accessibility (visibility) of classes, 
+interfaces, variables, methods, constructors, data members, and getter & setter methods.
+
+Public          declarations are visible everywhere
+
+Protected       declarations are visible within the package or all subclasses
+
+Default         declarations are visible only within the package (package private)
+		
+Private         declarations are visible within the class only
+    
+    Least to most restricted:
+            Default > protected
+
+We cannot declare classes and interfaces private in Java. However, the nested 
+classes can be declared private.
+
+We cannot declare classes or interfaces protected in Java.
+
+Access modifiers are mainly used for encapsulation. It can help us to control what
+part of a program can access the members of a class. So that misuse of data can be
+prevented. 
