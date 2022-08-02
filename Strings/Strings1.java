@@ -1,7 +1,4 @@
-class Strings{
-    /**
-     * @param args
-     */
+class Strings1{
     public static void main(String[] args) {
         String name = "James Gosling";
         String namex = "James Gosling";

@@ -24,3 +24,11 @@ public class Methods {
         System.out.println(add(obj.a, obj.b, 18));
     }
 }
+/* 
+static methods exist as a single copy for a class while instance methods exist as 
+multiple copies depending on the number of instances created for that particular
+class. 
+
+Static methods can't access instance methods/variables directly while 
+instance methods can access static variables and static methods directly.
+*/
