@@ -5,3 +5,10 @@ Uses of super keyword
     To access attributes (fields) of the superclass if both superclass and subclass have attributes with the same name.
     To explicitly call superclass no-arg (default) or parameterized constructor from the subclass constructor.
 
+super() keyword is required if the parameterized constructor (a constructor that takes arguments) 
+of the superclass has to be called from the subclass constructor. The compiler will not call default
+constructor in this case...
+
+The parameterized super() must always be the first statement in the body of the constructor of the 
+subclass, otherwise, we get a compilation error.  
+

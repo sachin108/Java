@@ -15,3 +15,11 @@ The most important use of inheritance in Java is code reusability.
 
 Method overriding is also known as runtime polymorphism. 
 Hence, we can achieve Polymorphism in Java with the help of inheritance.
+
+The same method declared in the superclass and its subclasses can have different access specifiers. 
+However, there is a restriction.
+We can only use those access specifiers in subclasses that provide larger access than the access 
+specifier of the superclass. 
+Suppose, a method myClass() in the superclass is declared protected. Then, the same method myClass() 
+in the subclass can be either public or protected, but not private.
+
