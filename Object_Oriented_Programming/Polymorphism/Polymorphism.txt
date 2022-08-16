@@ -1,0 +1,25 @@
+Polymorphism means more than one form i.e. the same entity (method or operator or object) can perform different operations in different scenarios.
+
+*The print() method is also an example of polymorphism. It is used to print values of different types like char, int, string, etc.
+
+We can achieve polymorphism in using the following ways:
+    **Method Overriding
+        During inheritance in Java, if the same method is present in both the superclass and the subclass. 
+        Then, the method in the subclass overrides the same method in the superclass. 
+
+        The method that is called is determined during the execution of the program. Hence, method overriding is a run-time polymorphism.
+
+    **Method Overloading
+        we can create methods with the same name if they differ in parameters. 
+
+        The method that is called is determined by the compiler. Hence, it is also known as compile-time polymorphism.
+
+    **Operator Overloading (Java doesn't support operator Overloading)
+        still few operators are already Overloaded in JAVA.
+        eg: + operator used to add two numbers and it can also be used to concatenate 2 strings
+
+
+Polymorphic Variables
+    A variable is called polymorphic if it refers to different values under different conditions.
+    Object variables (instance variables) represent the behavior of polymorphic variables in Java. 
+    It is because object variables of a class can refer to objects of its class as well as objects of its subclasses.
