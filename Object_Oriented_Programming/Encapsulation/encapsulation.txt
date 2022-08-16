@@ -1,0 +1,16 @@
+Encapsulation refers to the bundling of fields and methods inside a single class. It prevents outer classes from accessing 
+and changing fields and methods of a class. This also helps to achieve data hiding.
+
+Encapsulation refers to the bundling of related fields and methods together. 
+This can be used to achieve data hiding. Encapsulation in itself is not data hiding.
+
+Why Encapsulation?
+    *Encapsulation helps us to keep related fields and methods togethe.
+
+    *It helps to control the values of our data fields.
+    
+    *It helps to decouple components of a system. We can encapsulate code into multiple bundles.
+     These decoupled components (bundle) can be developed, tested, and debugged independently and concurrently. 
+     And, any changes in a particular component do not have any effect on other components.
+    
+    *We can also achieve data hiding using encapsulation.
