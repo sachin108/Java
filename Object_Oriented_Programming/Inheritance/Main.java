@@ -7,12 +7,18 @@ class Animal{
         System.out.println("Super class constructor");
     }
 
+    public Animal(String string) {
+    }
+
     void action(){
         System.out.println("I can eat");
     }
 
     void override(){
         System.out.println("It's Animal class method overrided in Dog class");
+    }
+
+    public static void identity() {
     }
 }
 

@@ -1,12 +1,8 @@
-abstract class Animal{
+public abstract class Animal{
 
     abstract void makeSound();
     
     String name;
-
-    Animal(){
-
-    }
 
     Animal(String name){
         this.name=name;
