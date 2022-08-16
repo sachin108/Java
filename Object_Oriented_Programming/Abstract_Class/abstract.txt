@@ -1,0 +1,21 @@
+The abstract class in Java cannot be instantiated (we cannot create objects of abstract classes). 
+We use the abstract keyword to declare an abstract class.
+
+abstract class can have abstract methods(without definition) and non-abstract methods(with definition).
+    To create abstract methods we use abstract keyword.
+    Abstract classes can also have constructors.
+
+We can extend abstract classes.
+A subclass must override all abstract methods of an abstract class. However, if the subclass is declared 
+abstract, it's not mandatory to override abstract methods. We can access the static attributes and methods
+of an abstract class using the reference of the abstract class. 
+
+Abstraction allows us to hide unnecessary details and only show the needed information.
+It allows us to manage complexity by omitting or hiding details with a simpler, higher-level idea.
+
+    A practical example of abstraction can be motorbike brakes. We know what brake does. 
+    When we apply the brake, the motorbike will stop. However, the working of the brake is kept hidden from us.
+
+    The major advantage of hiding the working of the brake is that now the manufacturer can implement brake differently 
+    for different motorbikes, however, what brake does will be the same.
+

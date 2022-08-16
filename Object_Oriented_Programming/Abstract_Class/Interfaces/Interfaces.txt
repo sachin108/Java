@@ -1,0 +1,52 @@
+ * An interface is a fully abstract class. It includes a group of abstract methods (methods without a body).
+ * We use the interface keyword to create an interface in Java.
+ * To use an interface, other classes must implement it. We use the implements keyword to implement an interface.
+ * We can't have any constructor in interfaces..
+ * We can achieve multiple inheritance using interfaces. Because a class can inherit more than one interfaces..
+    
+    interface Line {
+        …
+    }
+
+    interface Polygon {
+        …
+    }
+
+    class Rectangle implements Line, Polygon {  
+        …
+    }
+
+ * Similar to classes, interfaces can extend other interfaces. The extends keyword is used for extending interfaces. 
+
+    interface Line {
+        // members of Line interface
+    }
+
+    // extending interface
+    interface Polygon extends Line {
+        // members of Polygon interface
+        // members of Line interface
+    }
+
+    Here, the Polygon interface extends the Line interface. Now, if any class implements Polygon, 
+    it should provide implementations for all the abstract methods of both Line and Polygon.
+
+* With the release of Java 8, we can now add methods with implementation inside an interface. 
+  These methods are called default methods. To declare default methods inside interfaces, we use the default keyword.
+
+  We can add the method in our interface easily without implementation. All our classes that implement that interface 
+  must provide an implementation for the method.
+    
+  If a large number of classes were implementing this interface, we need to track all these classes and make changes to them. 
+  This is not only tedious but error-prone as well.
+    
+ To resolve this, Java introduced default methods. Default methods are inherited like ordinary methods.
+
+ public default void getSides() {
+     // body of getSides()
+  }
+
+  Default methods can be overridded.
+
+* With the release of Java 9, private methods are also supported in interfaces.
+  We cannot create objects of an interface. Hence, private methods are used as helper methods that provide support to other methods in interfaces.
