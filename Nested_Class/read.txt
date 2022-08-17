@@ -1,0 +1,12 @@
+There are two types of nested classes you can create in Java.
+    *Non-static nested class (inner class)
+        A non-static nested class is a class within another class. It has access to members of the enclosing class (outer class). 
+        Also known as inner class. Since the inner class exists within the outer class, **you must instantiate the outer class first, 
+        in order to instantiate the inner class**
+
+        Using the instance of the outer class, we then created objects of inner classes using .(dot) operator
+
+    *Static nested class
+        A static class inside another class. Such class is known as static nested class. Static nested classes are not called static inner classes.
+        Unlike inner class, a static nested class cannot access the member variables of the outer class. It is because the static nested class doesn't 
+        require you to create an instance of the outer class.
