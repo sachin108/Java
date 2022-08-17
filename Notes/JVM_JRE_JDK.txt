@@ -70,7 +70,9 @@ JVM (it is a part of JRE)
 
 JDK
     JRE 
+        Bytecode verifier
         JVM
             JIT
             Garbage Collector
-            
+            Interpreter
+
