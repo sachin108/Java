@@ -1,0 +1,46 @@
+Memory management is the process of allocating new objects and removing unused objects to make space for those new object allocations. 
+
+The Heap and the Nursery 
+        * Java objects reside in an area called the heap. The heap is created when the JVM starts up and may increase or decrease in size while the application runs. 
+        When the heap becomes full, garbage is collected. During the garbage collection objects that are no longer used are cleared, thus making space for new objects.
+
+        * The JVM uses more memory than just the heap. For example Java methods, thread stacks and native handles are allocated in memory separate from the heap, as well as JVM internal data structures.
+
+        * The heap is sometimes divided into two areas (or generations) called the nursery (or young space) and the old space. The nursery is a part of the heap reserved for allocation of new objects. 
+        When the nursery becomes full, garbage is collected by running a special young collection, where all objects that have lived long enough in the nursery are promoted (moved) to the old space, 
+        thus freeing up the nursery for more object allocation. When the old space becomes full garbage is collected there, a process called an old collection.
+
+        * The reasoning behind a nursery is that most objects are temporary and short lived. A young collection is designed to be swift at finding newly allocated objects that are still alive and moving them away from the nursery. 
+
+Stack Memory in Java
+        * It is used for static memory allocation and the execution of a thread. It contains primitive values that are specific to a method and references to objects referred from the method that are in a heap.
+        * Access to this memory is in Last-In-First-Out (LIFO) order. Whenever we call a new method, a new block is created on top of the stack which contains values specific to that method, like primitive variables and references to objects.
+        * When the method finishes execution, its corresponding stack frame is flushed, the flow goes back to the calling method, and space becomes available for the next method.
+        * Variables inside the stack exist only as long as the method that created them is running.
+        * If this memory is full, Java throws java.lang.StackOverFlowError.
+        * Access to this memory is fast when compared to heap memory.
+        * This memory is threadsafe, as each thread operates in its own stack.
+
+ 
+Heap Space in Java
+        * It is used for the dynamic memory allocation of Java objects and JRE classes at runtime. 
+        * New objects are always created in heap space, and the references to these objects are stored in stack memory.
+        * These objects have global access and we can access them from anywhere in the application.
+
+        * We can break this memory model down into smaller parts, called generations, which are:
+            Young Generation – this is where all new objects are allocated and aged. A minor Garbage collection occurs when this fills up.
+            
+            Old or Tenured Generation – this is where long surviving objects are stored. When objects are stored in the Young Generation, 
+                                        a threshold for the object's age is set, and when that threshold is reached, the object is moved to the old generation.
+            
+            Permanent Generation – this consists of JVM metadata for the runtime classes and application methods.
+
+        * We can always manipulate the size of heap memory as per our requirement.
+
+        * If heap space is full, Java throws java.lang.OutOfMemoryError.
+
+        * Access to this memory is comparatively slower than stack memory
+
+        * It can't be automatically deallocated. It needs Garbage Collector to free up unused objects.
+
+        * Heap isn't threadsafe and needs to be guarded by properly synchronizing the code.
