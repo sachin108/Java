@@ -23,3 +23,7 @@ There are two types of nested classes you can create in Java.
         Unlike inner class, a static nested class cannot access the member variables of the outer class. It is because the static nested class doesn't 
         require you to create an instance of the outer class.
 
+        *In Java, only nested classes are allowed to be static.
+        *Static nested classes can include both static and non-static fields and methods. 
+        *Static nested classes are associated with the outer class. This is why static nested 
+         classes can only access the class members (static fields and methods) of the outer class.
