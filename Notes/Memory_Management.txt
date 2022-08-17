@@ -36,11 +36,7 @@ Heap Space in Java
             Permanent Generation – this consists of JVM metadata for the runtime classes and application methods.
 
         * We can always manipulate the size of heap memory as per our requirement.
-
         * If heap space is full, Java throws java.lang.OutOfMemoryError.
-
         * Access to this memory is comparatively slower than stack memory
-
         * It can't be automatically deallocated. It needs Garbage Collector to free up unused objects.
-
         * Heap isn't threadsafe and needs to be guarded by properly synchronizing the code.
