@@ -25,3 +25,30 @@ Exception hierarchy in JAVA:
     * Exceptions can be caught and handled by the program. When an exception occurs within a method, it creates an object. This object is called the exception object.
       It contains information about the exception such as the name and description of the exception and state of the program when the exception occurred.
 
+throw keyword
+    * The Java throw keyword is used to explicitly throw a single exception.
+    * When we throw an exception, the flow of the program moves from the try block to the catch block.
+    * can used to throw unchecked exceptions (RUNTIME exceptions)
+    * allowed to throw only one exception at a time
+
+throws keyword
+    * throws keyword is used to declare the type of exceptions that might occur within the method.
+    * It is used in the method declaration.
+    * can used to throw checked and unchecked exceptions
+    * allowed to throw one or more than one exceptions at a time
+
+try and catch block:
+    * The try block includes the code that might generate an exception.
+    * we can use a try block without a catch block
+    * if we aren't using catch with try then finally block is necessary to write
+
+    * The catch block includes the code that is executed when there occurs an exception inside the try block.
+    * can't use catch block without try block
+
+finally block:
+    * The code inside the finally block is executed irrespective of the exception.
+
+    * There are some cases when a finally block does not execute:
+        Use of System.exit() method
+        An exception occurs in the finally block
+        The death of a thread

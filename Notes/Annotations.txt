@@ -1,0 +1,17 @@
+* Java annotations are metadata (data about data) for our program source code.
+* They provide additional information about the program to the compiler but are not part of the program itself. 
+  These annotations do not affect the execution of the compiled program.
+* Annotations start with @.
+    eg: @Override
+            It is not mandatory to use @Override when overriding a method. However, if we use it, the compiler gives an error 
+            if something is wrong (such as wrong parameter type) while overriding the method.
+
+        @SuppressWarnings
+        @Deprecated
+        @FunctionalInterface
+        @Documented
+        @Inherited
+        @Repeatable
+
+* Some annotations can be defined to give instructions to the program at runtime. 
+* Annotations can be used for giving instructions to the compiler, detect errors or suppress warnings
