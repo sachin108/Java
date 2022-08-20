@@ -1,0 +1,32 @@
+Multithreading is a Java feature that allows concurrent execution of two or more parts of a program for maximum utilization of CPU. 
+Each part of such program is called a thread. So, threads are light-weight processes within a process.
+
+Multithreading means that you have multiple threads of execution inside the same application. A thread is like a separate CPU executing your application. 
+Thus, a multithreaded application is like an application that has multiple CPUs executing different parts of the code at the same time. 
+    (Multithreading1.png)
+
+A thread is not equal to a CPU though. Usually a single CPU will share its execution time among multiple threads, switching between executing each of the 
+threads for a given amount of time. It is also possible to have the threads of an application be executed by different CPUs. 
+    (Multithreading2.png)
+
+
+Why Multithreading?
+    * Better utilization of multiple CPUs or CPU cores.
+    * Better user experience with regards to responsiveness.
+
+
+Multithreading vs. Multitasking
+    
+    * Multitasking which mean that computers could execute multiple programs at the same time. It wasn't really "at the same time" though. 
+      The single CPU was shared between the programs. The operating system would switch between the programs running, executing each of them for 
+      a little while before switching.
+
+    * Multithreading which mean that you could have multiple threads of execution inside the same program. A thread of execution can be thought 
+      of as a CPU executing the program. When you have multiple threads executing the same program, it is like having multiple CPUs execute within the same program. 
+
+    * Multithreading can be a great way to increase the performance of some types of programs. However, mulithreading is even more challenging than multitasking. 
+      The threads are executing within the same program and are hence reading and writing the same memory simultaneously can result in errors. 
+    
+    * Unlike multithreading, In multitasking, the processes share separate memory and resources.
+    
+    * In Multitasking CPU switching is between processes but in multithreading CPU switching is within a process.
