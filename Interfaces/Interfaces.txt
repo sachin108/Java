@@ -50,3 +50,7 @@
 
 * With the release of Java 9, private methods are also supported in interfaces.
   We cannot create objects of an interface. Hence, private methods are used as helper methods that provide support to other methods in interfaces.
+
+* If a Java interface contains one and only one abstract method then it is termed as functional interface. This only one method specifies the intended 
+  purpose of the interface.
+  For example, the Runnable interface from package java.lang; is a functional interface because it constitutes only one method i.e. run().

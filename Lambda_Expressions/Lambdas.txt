@@ -1,0 +1,7 @@
+Lambda expression is, essentially, an anonymous or unnamed method. The lambda expression does not execute on its own. 
+Instead, it is used to implement a method defined by a functional interface.
+
+Here is how we can define lambda expression in Java:
+    (parameter list) -> lambda body
+    
+    ( -> ) used is known as an arrow operator or a lambda operator
