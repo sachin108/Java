@@ -12,3 +12,8 @@ Allowed Constructors of Thread class:
   * Thread(ThreadGroup group, Runnable target, String name)	Allocates a new Thread object so that it has targeted as its run object, has the specified name as its name, and belongs to the thread group referred to by a group.
   
   * Thread(ThreadGroup group, String name)	Allocates a new Thread object.
+
+
+Once a thread has been started, it can never be started again. 2nd time t.start() throws java.lang.IllegalThreadStateException.
+
+Once the start() method is called, the thread is considered to be alive.
