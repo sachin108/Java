@@ -1,0 +1,14 @@
+Allowed Constructors of Thread class:  
+  * Thread()	Allocates a new Thread object.
+
+  * Thread(Runnable target)	Allocates a new Thread object.
+  
+  * Thread(Runnable target, String name)	Allocates a new Thread object.
+  
+  * Thread(String name)	Allocates a new Thread object.
+  
+  * Thread(ThreadGroup group, Runnable target)	Allocates a new Thread object.
+  
+  * Thread(ThreadGroup group, Runnable target, String name)	Allocates a new Thread object so that it has targeted as its run object, has the specified name as its name, and belongs to the thread group referred to by a group.
+  
+  * Thread(ThreadGroup group, String name)	Allocates a new Thread object.
