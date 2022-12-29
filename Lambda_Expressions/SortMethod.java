@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class SortMethod{
-    public static void main(String[] args){
+    public static void main(String[]  args){
         int[][] matrix=new int[][]{{1,2},{2,3},{3,2},{2,5},{6,3},{3,5}};
 
         //sorted according to first element of 2D array
