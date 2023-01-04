@@ -1,0 +1,10 @@
+The Object class provides multiple methods which are as follows:
+    tostring() method
+    hashCode() method
+    equals(Object obj) method
+    finalize() method
+    getClass() method
+    clone() method
+    wait(), notify() notifyAll() methods
+
+we can override these methods according to our need!
