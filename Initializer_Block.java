@@ -17,3 +17,10 @@ class Main{
         System.out.println("It will execute everytime an object will be created of this class i.e Main");
     }
 }
+
+/*
+    we can use the initializer blocks:
+        Constructors
+        Methods
+        Blocks 
+ */
