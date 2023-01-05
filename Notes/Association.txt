@@ -1,0 +1,20 @@
+Association
+    Aggregation(has-a relationship/ unidirectional association/ weak Composition)
+        Composition(part-of relationship/ strong Composition)
+
+-->Association is a relation between two separate classes which establishes through their Objects. 
+
+-->Association can be one-to-one, one-to-many, many-to-one, many-to-many. 
+
+-->In OOP, an Object communicates to another object to use functionality and services provided 
+by that object. 
+
+-->Composition and Aggregation are the two forms of association. 
+
+Aggregation:
+    both entities can survive individually
+
+Composition:
+    both entities are dependent on each other.
+    the composed object cannot exist without the other entity.
+

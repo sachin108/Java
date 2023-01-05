@@ -1,7 +1,7 @@
 import javax.naming.InitialContext;
 
 public class Initializer_Block{
-    //Initializer block
+    //Instance Initialization Block or Initializer block
     {   
         System.out.println("InitialzerBlock class's object has been created!");
     }
@@ -12,7 +12,7 @@ public class Initializer_Block{
 }
 
 class Main{
-    //Initializer block
+    //Instance Initialization Block or Initializer block
     {   
         System.out.println("It will execute everytime an object will be created of this class i.e Main");
     }
