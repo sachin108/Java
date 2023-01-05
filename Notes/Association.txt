@@ -13,8 +13,42 @@ by that object.
 
 Aggregation:
     both entities can survive individually
+    Code reusability
 
 Composition:
     both entities are dependent on each other.
     the composed object cannot exist without the other entity.
 
+Aggregation eg-:
+
+    class Address{
+        String street; int streetNo;
+    }
+
+    class Student{
+        Address ofStudent;
+        String name;
+    }
+
+Composition eg-:
+    
+    class Car{
+        Car(Engine engine){
+            // ...
+        }
+        //object of car can;t be created without and engine
+    }
+
+    class Engine{
+            
+    }
+
+
+Aggregation
+    When you want to use some property or behaviour of any class without the requirement of modifying it 
+    or adding more functionality to it, in such case Aggregation is a better option because in case of 
+    Aggregation we are just using any external class inside our class as a variable.
+
+Inheritance
+    When you want to use and modify some property or behaviour of any external class or may be want to 
+    add more function on top of it, its best to use Inheritance.
