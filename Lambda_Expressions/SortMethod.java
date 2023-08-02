@@ -17,5 +17,18 @@ public class SortMethod{
             System.out.println(Arrays.toString(arr));
         }
 
+        
+        //sorted according to first and second elements of 2D array
+        // if first elements are equal then use second 
+        // else first elements
+        Arrays.sort(mArr, (p1, p2) -> {
+            if (p1[0] == p2[0]) {
+                return p1[1] - p2[1];
+            }
+            return p1[0] - p2[0];
+        });
+        
+
+        
     }
 }
